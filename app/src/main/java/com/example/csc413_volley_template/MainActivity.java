@@ -132,6 +132,7 @@ public class MainActivity extends AppCompatActivity
      * Interface Implementation
      * <p>This method will be invoked when user press anywhere on cardview</p>
      */
+    //TODO:Optional, we can make this click redirect to a new webview or something we like
     @Override
     public void onCardClick(Movie movie) {
         Toast.makeText(this, movie.getTitle() + " clicked", Toast.LENGTH_SHORT).show();

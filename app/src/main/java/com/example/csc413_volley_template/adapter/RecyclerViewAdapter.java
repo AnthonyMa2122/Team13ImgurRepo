@@ -39,7 +39,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         Movie movie = movieList.get(position);
-
+        //TODO;change adaoter layout to increase/decrease amount of variables to match IMGUR API stuff
         CardViewHolder cardViewHolder = (CardViewHolder) holder;
         cardViewHolder.setTitle(movie.getTitle());
         cardViewHolder.setYear(movie.getYear());
@@ -78,7 +78,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
      *  CardViewHolder will hold the layout of the each item in the RecyclerView.
      */
     private class CardViewHolder extends RecyclerView.ViewHolder {
-
+    //TODO: Change to IMGUR API's variables. Mainly "title and year"
         private CardView cardView;
         private TextView title;
         private TextView year;
@@ -121,6 +121,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
          * @param imageUrl URL to poster of the Movie
          */
         void setPosterUrl(String imageUrl) {
+            //TODO: instead of movie poster URL, we use imgur pic url.
             ImageLoader imageLoader = VolleySingleton.getInstance(App.getContext()).getImageLoader();
             this.poster.setImageUrl(imageUrl, imageLoader);
         }

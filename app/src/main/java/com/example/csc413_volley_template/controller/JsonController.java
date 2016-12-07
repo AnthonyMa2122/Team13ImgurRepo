@@ -43,6 +43,7 @@ public class JsonController {
         int method = Request.Method.GET;
 
         // Url with GET parameters
+        //Todo: Change URL to imgur API's GET url
         String url = "http://www.omdbapi.com/?s=" + Uri.encode(query) + "&t=movie";
 
         // Create new request using JsonRequest

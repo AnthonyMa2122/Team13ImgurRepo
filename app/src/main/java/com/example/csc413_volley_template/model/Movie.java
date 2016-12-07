@@ -22,7 +22,14 @@ public class Movie {
     private String imdbId;
     private String type;
     private String posterUrl;
-
+   /*TODO: change to Imgur API variables
+    These are the variables for the imgur API, change everything to the Imgur version rather than OMDB
+    private String id;
+    private String title;
+    private String description;
+    private String datetime;
+    private String imageUrl;
+*/
     /**
      *
      * @param jsonObject    {@link JSONObject} response, received in Volley success listener
